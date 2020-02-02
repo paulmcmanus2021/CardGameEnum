@@ -8,11 +8,13 @@ public class DeckTest {
 
     Deck deck;
     Card card;
+    Player player;
 
     @Before
     public void before(){
         deck = new Deck(){};
         card = new Card(SuitType.SPADES, RankType.ACE);
+        player = new Player();
     }
 
     @Test

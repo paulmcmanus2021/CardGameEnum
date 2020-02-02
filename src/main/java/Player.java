@@ -9,10 +9,22 @@ public class Player {
     }
 
     public ArrayList<Card> getPlayerHand() {
-        return playerHand;
+        return this.playerHand;
     }
 
     public int getPlayerHandSize(){
         return this.playerHand.size();
+    }
+
+    public void addCardToHand(Card card){
+        this.playerHand.add(card);
+    }
+
+    public int getHandValue() {
+        int handValue = 0;
+        for (Card card : this.playerHand){
+            handValue += card.getValueFromEnum();
+        }
+        return handValue;
     }
 }

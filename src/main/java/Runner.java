@@ -5,6 +5,5 @@ public class Runner {
         ui.welcome();
         String name = ui.getPlayerName();
         ui.printPlayersCard(name);
-
     }
 }
