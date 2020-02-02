@@ -28,7 +28,15 @@ public class Game {
            else { return player2;}
            }
 
+   public Player compareHandValuesArray(ArrayList<Player> players) {
+       Player currentPlayer = players.get(0);
+       for (Player player : players) {
+           if (player.getHandValue() > currentPlayer.getHandValue()){
+                return player;
+           } else { return currentPlayer;}
+       }
+   }
 
-
+//end of class bracket
 }
 

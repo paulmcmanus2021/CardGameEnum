@@ -63,6 +63,17 @@ public class GameTest {
         player2.addCardToHand(card2);
         player1.addCardToHand(card3);
         player2.addCardToHand(card4);
-        assertEquals(player2, game.compareHandValues(player1, player2));
+        assertEquals(player2, game.compareHandValues(player1,player2));
+    }
+
+    @Test
+    public void canCompareHandValuesArray(){
+        game.addPlayer(player1);
+        game.addPlayer(player2);
+        player1.addCardToHand(card1);
+        player2.addCardToHand(card2);
+        player1.addCardToHand(card3);
+        player2.addCardToHand(card4);
+        assertEquals(player2, game.compareHandValuesArray(players));
     }
 }
