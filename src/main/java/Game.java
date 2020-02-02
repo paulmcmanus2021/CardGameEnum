@@ -33,8 +33,9 @@ public class Game {
        for (Player player : players) {
            if (player.getHandValue() > currentPlayer.getHandValue()){
                 return player;
-           } else { return currentPlayer;}
+           }
        }
+       return currentPlayer;
    }
 
 //end of class bracket
